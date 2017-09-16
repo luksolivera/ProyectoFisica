@@ -1,0 +1,31 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+.root{
+    -fx-background-image: url("ImageTeoria.jpg");
+}
+.button {
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#ff5fff, #ffffff);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.label1 {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,2,0 );
+}
+.label2 {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0000ff;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}

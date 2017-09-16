@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="root1" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectofisica.Menusimulacion1Controller">
+    <stylesheets>
+        <URL value="@menusimulacion.css" />
+    </stylesheets> 
+    <children>
+      <Label layoutX="172.0" layoutY="60.0" prefHeight="61.0" prefWidth="506.0" text="Módulo de Simulación" textFill="#f20711" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Calibri" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="178.0" text="Cinemática de la partícula:" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="258.0" text="Leyes de Newton:" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="338.0" text="Trabajo y Energía:" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="418.0" text="Movimiento Circular:" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="498.0" text="Movimiento Armónico:" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonCinematica" layoutX="667.0" layoutY="186.0" mnemonicParsing="false" onMouseClicked="#saltarCinematica" text="Comenzar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="667.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#saltarLeyDeNewton" text="Comenzar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="667.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#saltarEnergia" text="Comenzar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="667.0" layoutY="426.0" mnemonicParsing="false" onMouseClicked="#saltarRotacion" text="Comenzar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="667.0" layoutY="504.0" mnemonicParsing="false" text="Comenzar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="25.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#saltarAtras" text="Volver Atrás">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>  
+</AnchorPane>

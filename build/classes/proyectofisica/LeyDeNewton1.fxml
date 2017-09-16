@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="imagenSistemasDePoleas1" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffc0;" styleClass="root1" stylesheets="@leydenewton1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectofisica.LeyDeNewton1Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="64.0" text="Segunda ley de Newton">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="305.0" text="Fuerza Resultante">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="64.0" text="Sistema de poleas ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagenDiagramaDeCuerpoLibre" fitHeight="169.0" fitWidth="263.0" layoutX="56.0" layoutY="117.0" onMouseClicked="#saltarDiagrama" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Diagrama%20de%20Cuerpo%20Libre.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="botonVolverAtras" layoutX="14.0" layoutY="543.0" mnemonicParsing="false" onMouseClicked="#saltarAtras" prefHeight="33.0" prefWidth="99.0" text="Volver Atrás">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="217.0" fitWidth="233.0" layoutX="273.0" layoutY="359.0" onMouseClicked="#saltarSumatoria" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Fuerzas_triangulo_equilatero.gif" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="178.0" fitWidth="248.0" layoutX="471.0" layoutY="120.0" onMouseClicked="#saltarPoleas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image040.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectofisica.MenuTeoriaController">
+    <stylesheets>
+        <URL value="@menuteoria.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.2669172932330827" prefHeight="610.0" prefWidth="800.0">
+         <items>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="root">
+               <children>
+                  <TreeView fx:id="Arbol" layoutY="14.0" onContextMenuRequested="#seleccionContenido" onMouseClicked="#seleccionContenido" prefHeight="528.0" prefWidth="210.0" />
+                  <Button fx:id="botonAtras" layoutX="14.0" layoutY="557.0" mnemonicParsing="false" onAction="#saltarAtras" prefHeight="34.0" prefWidth="67.0" text="Atrás" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="608.0" prefWidth="614.0" styleClass="root">
+               <children>
+                  <Button fx:id="botonPrincipio" layoutX="31.0" layoutY="560.0" mnemonicParsing="false" text="&lt;&lt;" />
+                  <Button fx:id="botonFinal" layoutX="503.0" layoutY="560.0" mnemonicParsing="false" text="&gt;&gt;" />
+                  <Button fx:id="botonSiguiente" layoutX="459.0" layoutY="560.0" mnemonicParsing="false" text="-&gt;" />
+                  <Button fx:id="botonAnterior" layoutX="76.0" layoutY="560.0" mnemonicParsing="false" text="&lt;-" />
+                  <Button fx:id="botonSimulacion" layoutX="193.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#saltarCinematica" prefHeight="37.0" prefWidth="152.0" text="Simulación" />
+                  <Button fx:id="botonSimulacion1" layoutX="193.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#saltarLeyDeNewton" prefHeight="37.0" prefWidth="152.0" text="Simulación" />
+                  <Button fx:id="botonSimulacion2" layoutX="193.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#saltarEnergia" prefHeight="37.0" prefWidth="152.0" text="Simulación" />
+                  
+                  <TextFlow layoutX="9.0" layoutY="76.0" lineSpacing="2.0" prefHeight="137.0" prefWidth="566.0" textAlignment="JUSTIFY">
+                     <children>
+                        <Text fx:id="textInfo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" wrappingWidth="570.0" />
+                     </children>
+                  </TextFlow>
+                  <Label fx:id="labelTitulo" layoutX="12.0" layoutY="14.0" prefHeight="53.0" prefWidth="560.0" styleClass="label1" />
+                  <ImageView fx:id="ImageView1" fitHeight="150.0" fitWidth="200.0" layoutX="345.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextFlow layoutX="21.0" layoutY="182.0" lineSpacing="2.0" prefHeight="365.0" prefWidth="280.0" textAlignment="JUSTIFY">
+                     <children>
+                        <Text fx:id="textInfo1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label2" wrappingWidth="570.0" />
+                     </children>
+                  </TextFlow>
+                  <ImageView fx:id="ImageView2" fitHeight="150.0" fitWidth="200.0" layoutX="345.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

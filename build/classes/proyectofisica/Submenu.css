@@ -1,0 +1,39 @@
+
+.mainFxmlClass{
+    
+}
+.button{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "System";
+    -fx-font-size: 14px;
+    -fx-background-color: #C2B8B8;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+.button2{
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: rgb(212, 134, 115);
+    -fx-border-color: #C44D58;
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+    -fx-background-radius:20;
+    -fx-padding: 5;
+}
+.root {
+    -fx-background-color: #C44D58;
+}
+
+.panel {
+    -fx-background-color: #E08E79;
+}
+
+.panel2{
+    -fx-background-color: #C2B8B8;
+}
+.title{
+    -fx-text-fill: #000000;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}

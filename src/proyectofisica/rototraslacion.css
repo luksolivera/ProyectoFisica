@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-image: url("imRototraslacion.jpg");
+}
+.label {
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri";
+}
+.label2 {
+    -fx-font-size: 15px;
+    -fx-font-family: "Calibri";
+    -fx-font-weight: bold;
+    -fx-padding: 2;
+    -fx-text-fill: linear-gradient(rgb(236, 236, 255),rgb(236, 236, 255));
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#FFDDDD,#FF0000);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.checkbox {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: whitesmoke;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="800.0" styleClass="root1" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectofisica.TrabajoYEnergia1Controller">
+    <stylesheets>
+        <URL value="@trabajoyenergia.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="botonAtras" layoutX="14.0" layoutY="468.0" mnemonicParsing="false" onAction="#saltarAtras" prefHeight="23.0" prefWidth="70.0" text="Atrás">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="269.0" layoutY="14.0" text="Trabajo y Energía" />
+      <ComboBox fx:id="boxCalcular1" layoutX="14.0" layoutY="117.0" onAction="#seleccionCalcular" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="61.0" text="Calcular:" />
+      <Label fx:id="label2" layoutX="264.0" layoutY="116.0" styleClass="label1" text="Fuerza:" />
+      <TextField fx:id="text1" layoutX="498.0" layoutY="119.0" prefHeight="25.0" prefWidth="129.0" />
+      <Label fx:id="label3" layoutX="264.0" layoutY="155.0" styleClass="label1" text="Distancia:" />
+      <Label fx:id="label4" layoutX="269.0" layoutY="193.0" styleClass="label1" text="Ángulo:" />
+      <Label fx:id="label1" layoutX="259.0" layoutY="71.0" styleClass="label1" />
+      <TextField fx:id="text2" layoutX="498.0" layoutY="158.0" prefHeight="25.0" prefWidth="129.0" />
+      <TextField fx:id="text4" layoutX="498.0" layoutY="240.0" prefHeight="25.0" prefWidth="129.0" />
+      <TextField fx:id="text3" layoutX="498.0" layoutY="196.0" prefHeight="25.0" prefWidth="129.0" />
+      <Label layoutX="531.0" layoutY="303.0" text="Resultado:" />
+      <ComboBox fx:id="boxCalcular2" layoutX="14.0" layoutY="170.0" prefWidth="150.0" />
+      <Label fx:id="labelResultado" layoutX="530.0" layoutY="357.0" styleClass="label1" />
+      <Button fx:id="botonCalcular" layoutX="267.0" layoutY="311.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" text="Calcular">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="label5" layoutX="269.0" layoutY="238.0" styleClass="label1" text="Ángulo:" />
+   </children>
+</AnchorPane>

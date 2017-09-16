@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="root1" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectofisica.DiagramaDeCuerpoLibreController">
+    <stylesheets>
+        <URL value="@leydenewton1.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.2959309494451295" prefHeight="600.0" prefWidth="813.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="279.0" styleClass="root1">
+               <children>
+                  <CheckBox fx:id="CheckSuelo" layoutX="17.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#CheckBoxSuelo" prefHeight="30.0" prefWidth="170.0" text="Superficie Inclinada">
+                     <font>
+                        <Font name="Arial Narrow" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField fx:id="TextAngulo" layoutX="28.0" layoutY="319.0" />
+                  <Label fx:id="LabelMasa12" layoutX="15.0" layoutY="432.0" text="RESULTADO" />
+                  <Button fx:id="VolverAtras" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#saltarAtras" prefHeight="37.0" prefWidth="125.0" text="Volver Atrás">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="Calcular" layoutX="27.0" layoutY="360.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="calcular">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="LabelAngulo" layoutX="6.0" layoutY="282.0" prefHeight="35.0" prefWidth="247.0" styleClass="labelOption" text="Ángulo de Superficie" />
+                  <Label fx:id="LabelResultado" layoutX="17.0" layoutY="538.0" prefHeight="30.0" prefWidth="214.0" styleClass="label1" />
+                  <Label fx:id="LabelResultado1" layoutX="19.0" layoutY="492.0" prefHeight="27.0" prefWidth="200.0" styleClass="label1" />
+                  <ComboBox fx:id="boxCalcular" layoutX="13.0" layoutY="151.0" onAction="#seleccionarCalculo" prefWidth="150.0" promptText="Elegir" />
+                  <Label fx:id="LabelAceleracion1" layoutX="20.0" layoutY="73.0" text="Calcular" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="611.0" styleClass="root1">
+               <children>
+                  <CheckBox fx:id="CheckNormal" layoutX="190.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#CheckBoxNormal" prefHeight="30.0" prefWidth="170.0" text="Normal=Peso">
+                     <font>
+                        <Font name="Arial Narrow" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <Label fx:id="LabelAceleracion" layoutX="18.0" layoutY="88.0" styleClass="label1" text="Aceleración" />
+                  <TextField fx:id="TextAceleracion" layoutX="175.0" layoutY="91.0" />
+                  <Label fx:id="LabelRoce" layoutX="26.0" layoutY="241.0" styleClass="label1" text="Fuerza de Roce" />
+                  <Label fx:id="LabelNormal" layoutX="26.0" layoutY="133.0" styleClass="label1" text="Normal" />
+                  <TextField fx:id="TextNormal" layoutX="16.0" layoutY="181.0" />
+                  <Label fx:id="LabelFuerzaXY" layoutX="26.0" layoutY="331.0" styleClass="label1" text="Fuerza (X,Y)" />
+                  <TextField fx:id="TextFuerzaXY" layoutX="16.0" layoutY="375.0" />
+                  <Label fx:id="LabelMasa" layoutX="26.0" layoutY="493.0" styleClass="label1" text="Masa" />
+                  <TextField fx:id="TextMasa" layoutX="26.0" layoutY="543.0" />
+                  <Label fx:id="LabelFuerzaAngulo" layoutX="26.0" layoutY="413.0" styleClass="label1" text="Ángulo ß" />
+                  <TextField fx:id="TextFuerzaAngulo" layoutX="16.0" layoutY="454.0" />
+                  <TextField fx:id="TextRoce" layoutX="16.0" layoutY="287.0" />
+                  <Label fx:id="LabelCoeficiente" layoutX="324.0" layoutY="241.0" styleClass="label1" text="Coeficiente de Roce" />
+                  <TextField fx:id="TextCoeficiente" layoutX="367.0" layoutY="287.0" />
+                  <TextField fx:id="TextPeso" layoutX="367.0" layoutY="181.0" />
+                  <Label fx:id="LabelPeso" layoutX="420.0" layoutY="133.0" styleClass="label1" text="Peso" />
+                  <CheckBox fx:id="CheckRoce" layoutX="190.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#CheckBoxRoce" prefHeight="30.0" prefWidth="170.0" text="Con rozamiento">
+                     <font>
+                        <Font name="Arial Narrow" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <ImageView fitHeight="175.0" fitWidth="282.0" layoutX="287.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@FuerzasEjeX.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="LabelMasa121" layoutX="70.0" layoutY="14.0" text="Segunda Ley de Newton" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

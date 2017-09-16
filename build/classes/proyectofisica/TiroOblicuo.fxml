@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="root1" stylesheets="@cinematica1.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectofisica.TiroOblicuoController">
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" text="Tiro oblicuo" />
+      <Button layoutX="15.0" layoutY="555.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#saltarAtras" prefHeight="30.0" prefWidth="70.0" text="Atrás" />
+      <Button layoutX="76.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#calcular" prefHeight="50.0" prefWidth="100.0" styleClass="button1" text="Calcular" />
+      <Label layoutX="86.0" layoutY="195.0" text="Datos:" />
+      <Label layoutX="80.0" layoutY="101.0" text="Evaluar:" />
+      <Label layoutX="86.0" layoutY="503.0" text="Resultado:" />
+      <Label fx:id="lbResultado" layoutX="276.0" layoutY="503.0" />
+      <ComboBox fx:id="evaluar" layoutX="215.0" layoutY="109.0" onAction="#queQuiereEvaluar" prefHeight="25.0" prefWidth="106.0" promptText="Seleccionar" />
+      <TextField fx:id="tfPos0" layoutX="250.0" layoutY="340.0" promptText="m" />
+      <TextField fx:id="tfVel0" layoutX="250.0" layoutY="269.0" promptText="m/s" />
+      <TextField fx:id="tfTiempo" layoutX="250.0" layoutY="305.0" promptText="s" />
+      <TextField fx:id="tfAngulo" layoutX="250.0" layoutY="235.0" promptText="Grados" />
+      <Label fx:id="lbAngulo" layoutX="110.0" layoutY="235.0" styleClass="label2" text="Ángulo" />
+      <Label fx:id="lbPos0" layoutX="110.0" layoutY="340.0" styleClass="label2" text="Posición inicial" />
+      <Label fx:id="lbVel0" layoutX="110.0" layoutY="270.0" styleClass="label2" text="Velocidad inicial" />
+      <Label fx:id="lbTiempo" layoutX="110.0" layoutY="305.0" styleClass="label2" text="Tiempo" />
+      <Label layoutX="389.0" layoutY="101.0" text="Calcular:" />
+      <ComboBox fx:id="calcular" layoutX="533.0" layoutY="109.0" onAction="#queQuiereCalcular" prefHeight="25.0" prefWidth="127.0" />
+      <TextField fx:id="tfPosF" layoutX="250.0" layoutY="375.0" promptText="m" />
+      <Label fx:id="lbPosF" layoutX="110.0" layoutY="375.0" styleClass="label2" text="Posición final" />
+      <CheckBox fx:id="cbAceleracion" layoutX="389.0" layoutY="151.0" mnemonicParsing="false" onAction="#cbAceleracionClick" styleClass="checkbox" text="Gravedad = +10" />
+      <TextField fx:id="tfAceleracion" layoutX="550.0" layoutY="149.0" promptText="Gravedad m/s^2" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #0080ff;" styleClass="root1" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectofisica.Cinematica1Controller">
+   <stylesheets>
+        <URL value="@cinematica1.css" />
+    </stylesheets>
+    <children>
+      <Label layoutX="155.0" layoutY="14.0" prefHeight="53.0" prefWidth="90.0" text="MRU" textFill="#0d0d0d">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="20.0" text="MRUV" textFill="#0d0d0d">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="508.0" layoutY="277.0" text="Tiro Vertical " textFill="#0d0d0d">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="280.0" styleClass="welcome-text" stylesheets="@cinematica1.css" text="Tiro oblicuo" textFill="#030303">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagenMRU" fitHeight="250.0" fitWidth="250.0" layoutX="76.0" layoutY="67.0" onMouseClicked="#saltarMRU" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mru1.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imagenMRUV" fitHeight="131.0" fitWidth="370.0" layoutX="425.0" layoutY="86.0" onMouseClicked="#saltarMRUV" pickOnBounds="true" preserveRatio="true" translateX="1.0" y="10.0">
+         <image>
+            <Image url="@mruv.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imagenTiroVertical" fitHeight="250.0" fitWidth="250.0" layoutX="496.0" layoutY="330.0" onMouseClicked="#saltarCaidaLibre" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bolas_vertical_final2.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imagenTiroOblicuo" fitHeight="300.0" fitWidth="300.0" layoutX="51.0" layoutY="330.0" onMouseClicked="#saltarTiroOblicuo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2012-06-08-angryBirds2.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="botonVolverAtras" layoutX="14.0" layoutY="535.0" mnemonicParsing="false" onMouseClicked="#saltarAtras" prefHeight="38.0" prefWidth="107.0" styleClass="button1" stylesheets="@cinematica1.css" text="Volver Atrás">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

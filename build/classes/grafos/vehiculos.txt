@@ -1,0 +1,3 @@
+Automovil@Renault Clio 1.2@950@14.4@0.35
+Camioneta@Ford Ranger 3.2@2100@9.3@0.45
+Motocicleta@Ducati divel 1.2@239@2.6@0.15
